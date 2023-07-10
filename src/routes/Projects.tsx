@@ -1,5 +1,5 @@
-import jaquelinePreview from '../public/jaquelinePreview2.png'
-import shayanePreview from '../public/shayanepreview.png'
+import jaquelinePreview from '../../public/jaquelinePreview2.png'
+import shayanePreview from '../../public/shayanepreview.png'
 
 const Projects = () => {
     return (
