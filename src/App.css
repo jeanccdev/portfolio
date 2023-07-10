@@ -122,6 +122,9 @@ main {
   #projects div {
     grid-template-columns: auto auto;
   }
+  #projects div div h3 {
+    filter: blur(0px);
+  }
 }
 
 @media only screen and (max-width: 520px) {
