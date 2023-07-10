@@ -1,4 +1,6 @@
-$primary-color: rgb(133, 218, 242);
+:root {
+  --primary-color: rgb(133, 218, 242);
+}
 
 main {
   display: flex;
@@ -27,7 +29,7 @@ main {
 }
 
 #home h3 {
-  color: $primary-color;
+  color: var(--primary-color);
 }
 
 #skills {
@@ -35,7 +37,7 @@ main {
 }
 
 #skills h2 {
-  color: $primary-color;
+  color: var(--primary-color);
   margin: 2em 0;
 }
 
@@ -71,7 +73,7 @@ main {
 }
 
 #projects h2 {
-  color: $primary-color;
+  color: var(--primary-color);
 }
 
 #projects div {

@@ -1,5 +1,6 @@
-$primary-color: rgb(133, 218, 242);
-
+:root {
+  --primary-color: rgb(133, 218, 242);
+}
 body {
   margin: 0;
   border: 0;
@@ -24,7 +25,7 @@ header {
 }
 
 header h2 {
-  color: $primary-color;
+  color: var(--primary-color);
 }
 
 .btnMenu {
@@ -35,14 +36,14 @@ header h2 {
   flex-direction: column;
   width: 30px;
   height: 30px;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   border-radius: 50%;
-  box-shadow: 0 0 5px 2px $primary-color;
+  box-shadow: 0 0 5px 2px var(--primary-color);
   transition: all .7s;
 }
 
 .btnMenu:hover {
-  box-shadow: 0 0 10px 2px $primary-color;
+  box-shadow: 0 0 10px 2px var(--primary-color);
 }
 
 .container-menu {
