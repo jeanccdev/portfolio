@@ -1,143 +1,141 @@
 :root {
-  --primary-color: rgb(133, 218, 242);
+    --primary-color: rgb(133, 218, 242);
 }
 
 main {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 0 5vw;
-  width: 90vw;
-  height: 100vh;
-  background: linear-gradient(to right, rgba(40, 40, 40, 1), rgba(60, 60, 60, 1));
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0 5vw;
+    width: 90vw;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(40, 40, 40, 1), rgba(60, 60, 60, 1));
 }
 
 .BiLogo {
-  font-size: 30px;
-  margin: 0 5px;
-  opacity: 0.5;
-  transition: all 0.5s;
+    font-size: 30px;
+    margin: 0 5px;
+    opacity: 0.5;
+    transition: all 0.5s;
 }
 
 .BiLogo:hover {
-  scale: 1.1;
-  opacity: 1;
+    scale: 1.1;
+    opacity: 1;
 }
 
 #home {
-  font-size: 22px;
+    font-size: 22px;
 }
 
 #home h3 {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 #skills {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 #skills h2 {
-  color: var(--primary-color);
-  margin: 2em 0;
+    color: var(--primary-color);
+    margin: 2em 0;
 }
 
 #skills div {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
 }
 
 #skills div div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #skills div div i {
-  font-size: 60px;
-  margin: 0 2vw;
+    font-size: 60px;
+    margin: 0 2vw;
 }
 
 #skills div div p {
-  opacity: 0;
-  transition: all 1s;
+    opacity: 0;
+    transition: all 1s;
 }
 
 #skills div div:hover p {
-  opacity: 1;
+    opacity: 1;
 }
 
 #projects {
-  font-size: 22px;
+    font-size: 22px;
 }
 
 #projects h2 {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 #projects div {
-  display: grid;
-  grid-template-columns: auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 #projects div div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #projects div div img {
-  max-width: 220px;
-  filter: blur(2px);
-  transition: all .7s;
+    max-width: 220px;
+    transition: all .7s;
 }
 
 #projects div div p {
-  opacity: 0;
-  transition: all .7s;
-}
-
-#projects div div:hover img {
-  filter: blur(0px);
+    opacity: 0;
+    transition: all .7s;
 }
 
 #projects div div:hover p {
-  opacity: 1;
+    opacity: 1;
 }
 
 #projects div div h3 {
-  user-select: none;
-  filter: blur(5px);
-  transition: all .7s;
-  color: rgb(150, 150, 150);
+    user-select: none;
+    transition: all .7s;
+    color: rgb(150, 150, 150);
 }
 
 #projects div div:hover h3 {
-  filter: blur(0px);
+    filter: blur(0px);
 }
 
 @media only screen and (max-width: 780px) {
-  #projects div {
-    grid-template-columns: auto auto;
-  }
-  #projects div div h3 {
-    filter: blur(0px);
-  }
-  #projects div div img {
-    filter: blur(0px);
-  }
-  #projects div div p {
-    opacity: 1;
-  }
+    #projects div {
+        grid-template-columns: auto auto;
+    }
+
+    #projects div div h3 {
+        filter: blur(0px);
+    }
+
+    #projects div div img {
+        filter: blur(0px);
+    }
+
+    #projects div div p {
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 520px) {
-  main {
-    padding-top: 10vh;
-  }
-  #projects div {
-    grid-template-columns: auto;
-  }
+    main {
+        padding-top: 10vh;
+    }
+
+    #projects div {
+        grid-template-columns: auto;
+    }
 }

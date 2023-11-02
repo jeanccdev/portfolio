@@ -1,64 +1,52 @@
 :root {
-  --primary-color: rgb(133, 218, 242);
+    --primary-color: rgb(133, 218, 242);
 }
+
 body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: rgb(200, 200, 200);
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(200, 200, 200);
 }
 
 a {
-  text-decoration: none;
-  color: rgb(200, 200, 200);
+    text-decoration: none;
+    color: rgb(200, 200, 200);
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 94vw;
-  padding: 2vh 3vw;
-  position: fixed;
-  z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94vw;
+    padding: 2vh 3vw;
+    position: fixed;
+    z-index: 2;
 }
 
 header h2 {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
-.btnMenu {
-  user-select: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 30px;
-  height: 30px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  box-shadow: 0 0 5px 2px var(--primary-color);
-  transition: all .7s;
+.desktopMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
 }
 
-.btnMenu:hover {
-  box-shadow: 0 0 10px 2px var(--primary-color);
+.desktopMenu a {
+    font-size: 18px;
+    transition: all .4s;
 }
 
-.container-menu {
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 2;
-  background-color: rgba(50, 50, 50, 0.8);
+.desktopMenu a:hover {
+    text-shadow: 0 0 20px var(--primary-color);
+    color: var(--primary-color);
 }
 
-.container-menu a {
-  margin: .4em 0;
-  font-size: 22px;
+.linkSelecionado {
+    text-shadow: 0 0 20px var(--primary-color);
+    color: var(--primary-color);
 }
